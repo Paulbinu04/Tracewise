@@ -1,0 +1,135 @@
+[
+    {
+      "id": "REQ-001",
+      "title": "User Login with Email & Password",
+      "description": "Users should be able to log in using registered email and password.",
+      "priority": "High",
+      "type": "Functional",
+      "status": "Approved",
+      "created_by": "Business Analyst",
+      "last_updated": "2025-04-05T09:00:00Z",
+      "version": "1.0",
+      "tags": ["authentication", "security"]
+    },
+    {
+      "id": "REQ-002",
+      "title": "Password Reset via Email",
+      "description": "Users should be able to reset their password using a secure email verification process.",
+      "priority": "Medium",
+      "type": "Functional",
+      "status": "Approved",
+      "created_by": "Business Analyst",
+      "last_updated": "2025-04-05T10:00:00Z",
+      "version": "1.0",
+      "tags": ["authentication", "UX"]
+    },
+    {
+      "id": "REQ-003",
+      "title": "Create Task",
+      "description": "Users should be able to create tasks with a title, description, and priority.",
+      "priority": "High",
+      "type": "Functional",
+      "status": "Approved",
+      "created_by": "Product Owner",
+      "last_updated": "2025-04-05T11:00:00Z",
+      "version": "1.0",
+      "tags": ["task", "core"]
+    },
+    {
+      "id": "REQ-004",
+      "title": "Assign Task to Multiple Users",
+      "description": "Tasks should be assignable to one or more users (team-based assignment).",
+      "priority": "High",
+      "type": "Functional",
+      "status": "Updated",
+      "created_by": "Product Owner",
+      "last_updated": "2025-04-05T15:00:00Z",
+      "version": "2.0",
+      "tags": ["task", "assignment"]
+    },
+    {
+      "id": "REQ-005",
+      "title": "Set Task Due Date",
+      "description": "Users should be able to add due dates to tasks.",
+      "priority": "Medium",
+      "type": "Functional",
+      "status": "Approved",
+      "created_by": "Business Analyst",
+      "last_updated": "2025-04-05T11:30:00Z",
+      "version": "1.0",
+      "tags": ["task", "scheduling"]
+    },
+    {
+      "id": "REQ-006",
+      "title": "Task List Filtering",
+      "description": "Tasks can be filtered based on assignee and due date.",
+      "priority": "Medium",
+      "type": "Functional",
+      "status": "Approved",
+      "created_by": "Product Manager",
+      "last_updated": "2025-04-05T12:00:00Z",
+      "version": "1.0",
+      "tags": ["task", "UX"]
+    },
+    {
+      "id": "REQ-007",
+      "title": "In-App Notifications for Assignment",
+      "description": "Assigned users should receive an in-app notification when a task is assigned to them.",
+      "priority": "Medium",
+      "type": "Functional",
+      "status": "Approved",
+      "created_by": "Product Manager",
+      "last_updated": "2025-04-05T12:30:00Z",
+      "version": "1.0",
+      "tags": ["notifications", "task"]
+    },
+    {
+      "id": "REQ-008",
+      "title": "Admin Role Management",
+      "description": "Admins should be able to create users, delete users, and assign roles.",
+      "priority": "High",
+      "type": "Functional",
+      "status": "Approved",
+      "created_by": "System Architect",
+      "last_updated": "2025-04-05T13:00:00Z",
+      "version": "1.0",
+      "tags": ["admin", "security"]
+    },
+    {
+      "id": "REQ-009",
+      "title": "Task Activity History",
+      "description": "Each task should maintain a log of all status updates and changes.",
+      "priority": "Medium",
+      "type": "Non-Functional",
+      "status": "Approved",
+      "created_by": "QA Manager",
+      "last_updated": "2025-04-05T13:15:00Z",
+      "version": "1.0",
+      "tags": ["audit", "task"]
+    },
+    {
+      "id": "REQ-010",
+      "title": "Mobile Responsiveness",
+      "description": "All core features should be usable on mobile devices with responsive UI.",
+      "priority": "Low",
+      "type": "Non-Functional",
+      "status": "Approved",
+      "created_by": "UX Designer",
+      "last_updated": "2025-04-05T13:30:00Z",
+      "version": "1.0",
+      "tags": ["UX", "mobile"]
+    },
+    {
+      "id": "REQ-011",
+      "title": "Commenting on Tasks",
+      "description": "Users should be able to add comments to tasks for collaboration and updates.",
+      "priority": "Medium",
+      "type": "Functional",
+      "status": "Proposed",
+      "created_by": "Product Manager",
+      "last_updated": "2025-04-05T15:15:00Z",
+      "version": "1.0",
+      "tags": ["task", "collaboration"]
+    }
+  ]
+  
