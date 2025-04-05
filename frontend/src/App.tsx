@@ -5,6 +5,7 @@ import Requirements from "./pages/Requirements";
 import TestCases from "./pages/TestCases";
 import Traceability from "./pages/Traceability";
 import ChangeLog from "./pages/ChangeLog"
+import Dashboard from "./pages/Dashboard";
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
           <Topbar />
           <main className="flex-1 p-4 overflow-y-auto">
             <Routes>
-              <Route path="/" element={<Requirements />} />
+              <Route path="/" element={<Dashboard />} />
               <Route path="/requirements" element={<Requirements />} />
               <Route path="/testcases" element={<TestCases />} />
               <Route path="/traceability" element={<Traceability />} />

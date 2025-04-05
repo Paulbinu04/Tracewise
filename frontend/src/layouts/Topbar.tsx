@@ -27,7 +27,7 @@ export default function Topbar() {
       </div>
       <div className="flex items-center gap-4">
         {/* user | settings */}
-        <div className="w-8 h-8 bg-gray-300 rounded-full animate-pulse" />
+        <div className="w-8 h-8 bg-gray-300 rounded-full" />
       </div>
     </div>
   );

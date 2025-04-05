@@ -1,0 +1,484 @@
+[
+  {
+    "id": "TC-001",
+    "title": "Login with valid credentials",
+    "description": "Verify that user can log in with correct email and password.",
+    "steps": [
+      "Navigate to login page",
+      "Enter valid credentials",
+      "Click Login"
+    ],
+    "expected_result": "User is logged in and redirected to dashboard.",
+    "status": "Approved",
+    "priority": "High",
+    "type": "Manual",
+    "automated": true,
+    "requirement_ids": ["REQ-001"],
+    "created_by": "QA Lead",
+    "last_updated": "2025-04-05T14:00:00Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-002",
+    "title": "Login with invalid credentials",
+    "description": "Verify login fails with incorrect password.",
+    "steps": [
+      "Navigate to login page",
+      "Enter invalid password",
+      "Click Login"
+    ],
+    "expected_result": "User sees error message.",
+    "status": "Approved",
+    "priority": "High",
+    "type": "Manual",
+    "automated": true,
+    "requirement_ids": ["REQ-001"],
+    "created_by": "QA Lead",
+    "last_updated": "2025-04-05T14:05:00Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-003",
+    "title": "Verify password reset email is sent",
+    "description": "Check that a password reset email is sent when a valid email is entered.",
+    "steps": [
+      "Navigate to forgot password page",
+      "Enter registered email",
+      "Click on Send Reset Link"
+    ],
+    "expected_result": "A password reset email is received.",
+    "status": "Approved",
+    "priority": "Medium",
+    "type": "Manual",
+    "automated": true,
+    "requirement_ids": ["REQ-002"],
+    "created_by": "QA Lead",
+    "last_updated": "2025-04-05T14:10:00Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-004",
+    "title": "Create task with valid data",
+    "description": "Verify a task is created with all fields filled correctly.",
+    "steps": [
+      "Navigate to task page",
+      "Click create task",
+      "Fill title, description, priority",
+      "Save task"
+    ],
+    "expected_result": "Task appears in the task list.",
+    "status": "Approved",
+    "priority": "High",
+    "type": "Manual",
+    "automated": true,
+    "requirement_ids": ["REQ-003"],
+    "created_by": "QA Engineer",
+    "last_updated": "2025-04-05T14:15:00Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-005",
+    "title": "Assign task to a user",
+    "description": "Verify task can be assigned to a selected user.",
+    "steps": [
+      "Create or open a task",
+      "Select a user from dropdown",
+      "Click Assign"
+    ],
+    "expected_result": "Task shows assigned user.",
+    "status": "Approved",
+    "priority": "High",
+    "type": "Manual",
+    "automated": true,
+    "requirement_ids": ["REQ-004"],
+    "created_by": "QA Engineer",
+    "last_updated": "2025-04-05T14:20:00Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-006",
+    "title": "Set due date for task",
+    "description": "Verify user can set a due date for the task.",
+    "steps": ["Open task", "Select due date", "Save task"],
+    "expected_result": "Due date is displayed with the task.",
+    "status": "Approved",
+    "priority": "Medium",
+    "type": "Manual",
+    "automated": true,
+    "requirement_ids": ["REQ-005"],
+    "created_by": "QA Engineer",
+    "last_updated": "2025-04-05T14:25:00Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-007",
+    "title": "Filter tasks by assignee",
+    "description": "Verify tasks are correctly filtered by assigned user.",
+    "steps": [
+      "Navigate to task list",
+      "Select assignee from filter",
+      "Apply filter"
+    ],
+    "expected_result": "Only tasks assigned to the selected user are shown.",
+    "status": "Approved",
+    "priority": "Medium",
+    "type": "Manual",
+    "automated": false,
+    "requirement_ids": ["REQ-006"],
+    "created_by": "QA Engineer",
+    "last_updated": "2025-04-05T14:30:00Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-008",
+    "title": "Notification appears on assignment",
+    "description": "Check if assignee gets in-app notification.",
+    "steps": [
+      "Assign task to user",
+      "Switch to user account",
+      "Check notifications"
+    ],
+    "expected_result": "New assignment notification is visible.",
+    "status": "Approved",
+    "priority": "Medium",
+    "type": "Manual",
+    "automated": true,
+    "requirement_ids": ["REQ-007"],
+    "created_by": "QA Lead",
+    "last_updated": "2025-04-05T14:35:00Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-009",
+    "title": "Admin can create a new user",
+    "description": "Verify admin can add a new user to the system.",
+    "steps": [
+      "Login as admin",
+      "Navigate to user management",
+      "Click Add User",
+      "Fill and save form"
+    ],
+    "expected_result": "New user appears in user list.",
+    "status": "Approved",
+    "priority": "High",
+    "type": "Manual",
+    "automated": true,
+    "requirement_ids": ["REQ-008"],
+    "created_by": "QA Lead",
+    "last_updated": "2025-04-05T14:40:00Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-010",
+    "title": "Verify role assignment on user creation",
+    "description": "Ensure that users are assigned the correct role during creation.",
+    "steps": [
+      "Navigate to admin panel",
+      "Add a new user",
+      "Select 'Developer' role",
+      "Save user"
+    ],
+    "expected_result": "New user is created with the 'Developer' role.",
+    "status": "Approved",
+    "priority": "Medium",
+    "type": "Manual",
+    "automated": false,
+    "requirement_ids": ["REQ-006"],
+    "created_by": "QA Lead",
+    "last_updated": "2025-04-05T12:30:00Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-011",
+    "title": "Validate access restriction for test cases",
+    "description": "Ensure only authorized users can edit test cases.",
+    "steps": ["Login as tester", "Attempt to edit another team's test case"],
+    "expected_result": "Access denied message is displayed.",
+    "status": "Approved",
+    "priority": "High",
+    "type": "Manual",
+    "automated": true,
+    "requirement_ids": ["REQ-006"],
+    "created_by": "QA Engineer",
+    "last_updated": "2025-04-05T12:32:00Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-012",
+    "title": "Check real-time collaboration sync",
+    "description": "Test if two users can collaborate simultaneously and view live changes.",
+    "steps": [
+      "User A and User B open the same project",
+      "User A adds a test case",
+      "User B sees the update without refresh"
+    ],
+    "expected_result": "Changes are visible in real-time for both users.",
+    "status": "Approved",
+    "priority": "High",
+    "type": "Manual",
+    "automated": false,
+    "requirement_ids": ["REQ-007"],
+    "created_by": "QA Engineer",
+    "last_updated": "2025-04-05T12:33:00Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-013",
+    "title": "Verify change history tracking",
+    "description": "Check that updates to a test case are logged with timestamps and authors.",
+    "steps": ["Edit an existing test case", "View the version history"],
+    "expected_result": "Changes are logged with accurate time and user info.",
+    "status": "Approved",
+    "priority": "Medium",
+    "type": "Manual",
+    "automated": true,
+    "requirement_ids": ["REQ-007"],
+    "created_by": "QA Lead",
+    "last_updated": "2025-04-05T12:35:00Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-014",
+    "title": "Check traceability tree visualization",
+    "description": "Verify that test cases are correctly visualized in the requirement traceability tree.",
+    "steps": [
+      "Create a requirement",
+      "Create a test case and map to the requirement",
+      "Open traceability view"
+    ],
+    "expected_result": "Graph view shows correct linkage.",
+    "status": "Approved",
+    "priority": "Medium",
+    "type": "Manual",
+    "automated": false,
+    "requirement_ids": ["REQ-008"],
+    "created_by": "QA Engineer",
+    "last_updated": "2025-04-05T12:36:00Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-015",
+    "title": "Validate drag and drop hierarchy building",
+    "description": "Test the user’s ability to build hierarchy visually using drag-and-drop.",
+    "steps": [
+      "Go to visual traceability builder",
+      "Drag a test case onto a requirement",
+      "Connect with visual arrow"
+    ],
+    "expected_result": "Hierarchy is created successfully and saved.",
+    "status": "Approved",
+    "priority": "Low",
+    "type": "Manual",
+    "automated": false,
+    "requirement_ids": ["REQ-008"],
+    "created_by": "QA Lead",
+    "last_updated": "2025-04-05T12:37:00Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-016",
+    "title": "Validate AI recommendation for new test cases",
+    "description": "Check if AI suggests appropriate test cases for new requirements.",
+    "steps": [
+      "Create a requirement related to login functionality",
+      "Check AI recommendations"
+    ],
+    "expected_result": "AI suggests login test cases based on past data.",
+    "status": "Approved",
+    "priority": "High",
+    "type": "AI",
+    "automated": true,
+    "requirement_ids": ["REQ-009"],
+    "created_by": "QA Engineer",
+    "last_updated": "2025-04-05T12:40:00Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-017",
+    "title": "Verify AI deprecates obsolete test cases",
+    "description": "Ensure AI marks outdated test cases after requirement changes.",
+    "steps": [
+      "Update a requirement significantly",
+      "Observe AI deprecation alerts"
+    ],
+    "expected_result": "AI flags and recommends removal of certain test cases.",
+    "status": "Approved",
+    "priority": "High",
+    "type": "AI",
+    "automated": true,
+    "requirement_ids": ["REQ-009"],
+    "created_by": "QA Engineer",
+    "last_updated": "2025-04-05T12:41:00Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-018",
+    "title": "Test AI recommendation matches project context",
+    "description": "Validate if test case suggestions align with project-specific components.",
+    "steps": [
+      "Create a module for payment integration",
+      "Observe test case recommendations"
+    ],
+    "expected_result": "AI suggests relevant test cases for payment flows.",
+    "status": "Approved",
+    "priority": "Medium",
+    "type": "AI",
+    "automated": true,
+    "requirement_ids": ["REQ-009"],
+    "created_by": "QA Lead",
+    "last_updated": "2025-04-05T12:42:00Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-019",
+    "title": "Test AI prioritization for regression cycle",
+    "description": "Ensure AI prioritizes test cases for regression based on recent changes.",
+    "steps": [
+      "Make changes to a module",
+      "Start regression planning",
+      "Observe AI-prioritized test list"
+    ],
+    "expected_result": "AI highlights the most relevant test cases first.",
+    "status": "Approved",
+    "priority": "High",
+    "type": "AI",
+    "automated": true,
+    "requirement_ids": ["REQ-010"],
+    "created_by": "QA Engineer",
+    "last_updated": "2025-04-05T12:45:00Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-020",
+    "title": "Validate priority shift after defect discovery",
+    "description": "Ensure test case priority increases if bugs were found in earlier cycles.",
+    "steps": [
+      "Mark a test case with failed results",
+      "Check next test cycle suggestions"
+    ],
+    "expected_result": "Priority of the test case is boosted by the system.",
+    "status": "Approved",
+    "priority": "Medium",
+    "type": "AI",
+    "automated": true,
+    "requirement_ids": ["REQ-010"],
+    "created_by": "QA Lead",
+    "last_updated": "2025-04-05T12:46:00Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-021",
+    "title": "Check priority sorting based on deadline",
+    "description": "Verify test case order is impacted by approaching deadlines.",
+    "steps": [
+      "Set a project deadline in 2 days",
+      "Check AI-prioritized test case list"
+    ],
+    "expected_result": "Test cases for critical modules are surfaced to top.",
+    "status": "Approved",
+    "priority": "High",
+    "type": "AI",
+    "automated": true,
+    "requirement_ids": ["REQ-010"],
+    "created_by": "QA Engineer",
+    "last_updated": "2025-04-05T12:48:00Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-022",
+    "title": "Test search by requirement title",
+    "description": "Check test case search using related requirement's title keyword.",
+    "steps": ["Search 'authentication'", "View filtered test cases"],
+    "expected_result": "Only test cases linked to authentication requirements are shown.",
+    "status": "Approved",
+    "priority": "Medium",
+    "type": "Manual",
+    "automated": true,
+    "requirement_ids": ["REQ-002", "REQ-009"],
+    "created_by": "QA Lead",
+    "last_updated": "2025-04-05T12:49:00Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-023",
+    "title": "Test filter by requirement tag",
+    "description": "Filter test cases by tag (e.g., UX, performance, security).",
+    "steps": ["Apply tag filter: security", "Check filtered results"],
+    "expected_result": "Only test cases linked to security-tagged requirements are shown.",
+    "status": "Approved",
+    "priority": "Low",
+    "type": "Manual",
+    "automated": true,
+    "requirement_ids": ["REQ-003"],
+    "created_by": "QA Engineer",
+    "last_updated": "2025-04-05T12:50:00Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-024",
+    "title": "Validate test case export to PDF",
+    "description": "Ensure test cases can be exported to PDF format for reporting.",
+    "steps": [
+      "Select test cases",
+      "Click 'Export to PDF'",
+      "Download and view file"
+    ],
+    "expected_result": "Well-formatted PDF with all selected test cases is generated.",
+    "status": "Approved",
+    "priority": "Low",
+    "type": "Manual",
+    "automated": false,
+    "requirement_ids": ["REQ-004"],
+    "created_by": "QA Lead",
+    "last_updated": "2025-04-05T12:51:00Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-025",
+    "title": "Test bulk update of test case statuses",
+    "description": "Verify user can change statuses of multiple test cases at once.",
+    "steps": ["Select multiple test cases", "Change status to 'Retest'"],
+    "expected_result": "All selected test cases show updated status.",
+    "status": "Approved",
+    "priority": "Medium",
+    "type": "Manual",
+    "automated": true,
+    "requirement_ids": ["REQ-004"],
+    "created_by": "QA Engineer",
+    "last_updated": "2025-04-05T12:53:00Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-026",
+    "title": "Verify test case cloning functionality",
+    "description": "Ensure that test cases can be cloned and edited separately.",
+    "steps": ["Select a test case", "Click 'Clone'", "Edit cloned version"],
+    "expected_result": "Cloned test case is created and editable without changing original.",
+    "status": "Approved",
+    "priority": "Low",
+    "type": "Manual",
+    "automated": true,
+    "requirement_ids": ["REQ-005"],
+    "created_by": "QA Lead",
+    "last_updated": "2025-04-05T12:54:00Z",
+    "version": "1.0"
+  },
+  {
+    "id": "TC-027",
+    "title": "Test project-based access isolation",
+    "description": "Verify users can't view test cases from projects they aren't assigned to.",
+    "steps": [
+      "Login as User A (assigned to Project X)",
+      "Try accessing Project Y’s test cases"
+    ],
+    "expected_result": "Access denied or test cases are not listed.",
+    "status": "Approved",
+    "priority": "High",
+    "type": "Manual",
+    "automated": false,
+    "requirement_ids": ["REQ-001"],
+    "created_by": "QA Lead",
+    "last_updated": "2025-04-05T12:55:00Z",
+    "version": "1.0"
+  }
+]
